@@ -197,7 +197,7 @@ public class SkeletonGamesToConditions {
 
                 else {
                     a = cardListArrange.get(i);
-                    if(counterConsecutiveCards==0){
+                    if(counterConsecutiveCards<=1){
                         continue;
                     }
                     counterConsecutiveCards --;

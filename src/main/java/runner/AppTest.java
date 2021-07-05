@@ -49,9 +49,9 @@ public class AppTest {
         System.out.println("Welcome to the POKER APP in which we will simulate a heads-up . Please first put your names");
         System.out.println("Player 1 name is ");
         Scanner scanner = new Scanner(System.in);
-        String name1 = scanner.next();
+        String name1 = scanner.nextLine();
         System.out.println("Player 2 name is ");
-        String name2 = scanner.next();
+        String name2 = scanner.nextLine();
 
 
 

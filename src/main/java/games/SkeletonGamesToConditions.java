@@ -190,7 +190,7 @@ public class SkeletonGamesToConditions {
                 if (cardListArrange.get(i) - a == counterConsecutiveCards) {
                     counterConsecutiveCards++;
 
-                } else  if (cardListArrange.get(i).equals(cardListArrange.get(i - 1)) && cardListArrange.get(i) + 1 ==
+                } else  if (i!=cardListArrange.size()-1 && cardListArrange.get(i).equals(cardListArrange.get(i - 1)) && cardListArrange.get(i) + 1 ==
                             (cardListArrange.get(i + 1))) {
 
                     }

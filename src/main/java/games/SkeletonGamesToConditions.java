@@ -249,9 +249,9 @@ public class SkeletonGamesToConditions {
              * comparam de acuma sa vedem care sunt jocurile in ordine importantei
              */
             //asta e quinta royala
-            if (counterConsecutiveCards >= 4 && isFlash) {
+            if (((counterConsecutiveCards >= 4|| (counterConsecutiveCards==3 && straight.size()==4)) && isFlash)) { {
                 return "Quinta royala";
-            } else if (counterConsecutiveCards >= 4) {
+            } else if (counterConsecutiveCards >= 4||(counterConsecutiveCards==3 && straight.size()==4)) {
                 return "Quinta";
             } else if (counterFirstCard >= 3) {
                 if (counterSecondCard == 2) {

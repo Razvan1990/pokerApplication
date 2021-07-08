@@ -204,6 +204,17 @@ public class SkeletonGamesToConditions {
                     counterConsecutiveCards --;
                 }
             }
+            boolean isStraightOK = false;
+            if(straight.size()==4){
+               if(straight.get(3)-straight.get(0)==3){
+                  isStraightOK = true;
+            }
+        }
+        if(straight.size()>=5){
+            if(straight.get(4)-straight.get(1)==3){
+                isStraightOK = true;
+            }
+        }
 
             for (int i = 0; i < cardListArrange.size() - 1; i++) {
                 if (cardListArrange.get(i) == cardListArrange.get(i + 1)) {
@@ -250,9 +261,9 @@ public class SkeletonGamesToConditions {
              * comparam de acuma sa vedem care sunt jocurile in ordine importantei
              */
             //asta e quinta royala
-            if (((counterConsecutiveCards >= 4|| (counterConsecutiveCards==3 && straight.size()==4)) && isFlash))  {
+            if (((counterConsecutiveCards >= 4 && isStraightOK)|| (counterConsecutiveCards==3 && straight.size()==4 && isStraightOK)) && isFlash) { 
                 return "Quinta royala";
-            } else if (counterConsecutiveCards >= 4||(counterConsecutiveCards==3 && straight.size()==4)) {
+            } else if ((counterConsecutiveCards >= 4 && isStraightOK)||(counterConsecutiveCards==3 && straight.size()==4 && isStraightOK)) {
                 return "Quinta";
             } else if (counterFirstCard >= 3) {
                 if (counterSecondCard == 2) {

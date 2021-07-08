@@ -182,13 +182,14 @@ public class SkeletonGamesToConditions {
             //o lista in care practic facem diferenta dintre full si careu
             List<Integer> full = new ArrayList<>();
             List<Integer> flush = new ArrayList<>();
+            List<Integer> straight = new ArrayList<>();    
 
 
             //parcurgem lista cu carti
             int a = cardListArrange.get(0);
             for (int i = 1; i < cardListArrange.size(); i++) {
                 if (cardListArrange.get(i) - a == counterConsecutiveCards) {
-                    counterConsecutiveCards++;
+                    counterConsecutiveCards++;straight.add(cardListArrange.get(i));
 
                 } else  if (i!=cardListArrange.size()-1 && cardListArrange.get(i).equals(cardListArrange.get(i - 1)) && cardListArrange.get(i) + 1 ==
                             (cardListArrange.get(i + 1))) {
@@ -249,7 +250,7 @@ public class SkeletonGamesToConditions {
              * comparam de acuma sa vedem care sunt jocurile in ordine importantei
              */
             //asta e quinta royala
-            if (((counterConsecutiveCards >= 4|| (counterConsecutiveCards==3 && straight.size()==4)) && isFlash)) { {
+            if (((counterConsecutiveCards >= 4|| (counterConsecutiveCards==3 && straight.size()==4)) && isFlash))  {
                 return "Quinta royala";
             } else if (counterConsecutiveCards >= 4||(counterConsecutiveCards==3 && straight.size()==4)) {
                 return "Quinta";

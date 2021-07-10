@@ -205,9 +205,9 @@ public class CheckWinner {
                     } else {
                         int comparisionResult2 = decideEquality.checkValueCardsInList(player1ArrangedList, player2ArrangedList);
                         if (comparisionResult2 == 1) {
-                            return CardsAndSymbols.message(namePLayer1) + " . You both have 2 pairs but "+ namePLayer1 +" has a bigger kicker";
+                            return CardsAndSymbols.message(namePLayer1) + " . You both have 1 pair but "+ namePLayer1 +" has a bigger kicker";
                         } else if (comparisionResult2 == 2) {
-                            return CardsAndSymbols.message2(namePlayer2) + " . You both have 2 pairs but "+ namePlayer2+" has a bigger kicker";
+                            return CardsAndSymbols.message2(namePlayer2) + " . You both have 1 pair but "+ namePlayer2+" has a bigger kicker";
                         }
                     }
                 }

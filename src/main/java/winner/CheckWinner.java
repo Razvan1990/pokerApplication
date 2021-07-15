@@ -59,7 +59,7 @@ public class CheckWinner {
         Royala
          */
             if (valuePlayer1 == 9) {
-                int comparisionResult = decideEquality.checkValueCardsInList(cardGameListPlayer1, cardGameListPlayer2);
+                int comparisionResult = decideEquality.checkValueCardsInCardGameList(cardGameListPlayer1, cardGameListPlayer2);
                 if (comparisionResult == 1) {
                     return CardsAndSymbols.message(namePLayer1) + " . The straight flush from " +namePLayer1+ " is higher";
                 } else if (comparisionResult == 2) {
@@ -73,7 +73,7 @@ public class CheckWinner {
             Careu
              */
             else if (valuePlayer1 == 8) {
-                int comparisionResult = decideEquality.checkValueCardsInList(cardGameListPlayer1, cardGameListPlayer2);
+                int comparisionResult = decideEquality.checkValueCardsInCardGameList(cardGameListPlayer1, cardGameListPlayer2);
                 if (comparisionResult == 1) {
                     return CardsAndSymbols.message(namePLayer1)+ " . 4 of a kind from "+namePLayer1+ " is with a bigger card";
                 } else if (comparisionResult == 2) {
@@ -98,7 +98,7 @@ public class CheckWinner {
                 Full
                  */
             } else if (valuePlayer1 == 7) {
-                int comparisionResult = decideEquality.checkValueCardsInList(cardGameListPlayer1, cardGameListPlayer2);
+                int comparisionResult = decideEquality.checkValueCardsInCardGameList(cardGameListPlayer1, cardGameListPlayer2);
                 if (comparisionResult == 1) {
                     return CardsAndSymbols.message(namePLayer1) + " . Full House from "+namePLayer1+" is with a bigger card";
                 } else if (comparisionResult == 2) {
@@ -127,7 +127,7 @@ public class CheckWinner {
             Chinta
              */
             } else if (valuePlayer1 == 5) {
-                int comparisionResult = decideEquality.checkValueCardsInList(cardGameListPlayer1, cardGameListPlayer2);
+                int comparisionResult = decideEquality.checkValueCardsInCardGameList(cardGameListPlayer1, cardGameListPlayer2);
                 if (comparisionResult == 1) {
                     return CardsAndSymbols.message(namePLayer1) + " . Straight from "+ namePLayer1+" is with a bigger card";
                 } else if (comparisionResult == 2) {
@@ -139,7 +139,7 @@ public class CheckWinner {
                 Cui
                  */
             } else if (valuePlayer1 == 4) {
-                int comparisionResult = decideEquality.checkValueCardsInList(cardGameListPlayer1, cardGameListPlayer2);
+                int comparisionResult = decideEquality.checkValueCardsInCardGameList(cardGameListPlayer1, cardGameListPlayer2);
                 if (comparisionResult == 1) {
                     return CardsAndSymbols.message(namePLayer1)+ " . The 3 of a kind from "+namePLayer1+ " is bigger";
                 } else if (comparisionResult == 2) {
@@ -165,7 +165,7 @@ public class CheckWinner {
                 2 perechi
                  */
             } else if (valuePlayer1 == 3) {
-                int comparisionResult = decideEquality.checkValueCardsInList(cardGameListPlayer1, cardGameListPlayer2);
+                int comparisionResult = decideEquality.checkValueCardsInCardGameList(cardGameListPlayer1, cardGameListPlayer2);
                 if (comparisionResult == 1) {
                     return CardsAndSymbols.message(namePLayer1)+". " +namePLayer1+ " has a bigger pair from the two";
                 } else if (comparisionResult == 2) {
@@ -186,7 +186,7 @@ public class CheckWinner {
                 }
 
             } else if (valuePlayer1 == 2) {
-                int comparisionResult = decideEquality.checkValueCardsInList(cardGameListPlayer1, cardGameListPlayer2);
+                int comparisionResult = decideEquality.checkValueCardsInCardGameList(cardGameListPlayer1, cardGameListPlayer2);
                 if (comparisionResult == 1) {
                     return CardsAndSymbols.message(namePLayer1) + " ."+namePLayer1+" has a bigger pair from the two";
                 } else if (comparisionResult == 2) {

@@ -10,7 +10,7 @@ public class AceRemovalList {
                     case 1:
                         intListWithAces.removeIf(value -> value == 14);
                         break;
-                    case 15:
+                    case 14:
                         intListWithAces.removeIf(value -> value == 1);
                         break;
                 }

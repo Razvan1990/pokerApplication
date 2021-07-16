@@ -65,7 +65,7 @@ public class ListToList {
                 case "A":
                     cardValue = 1;
                     myIntList.add(cardValue);
-                    cardValue = 15;
+                    cardValue = 14;
                     myIntList.add(cardValue);
                     break;
             }
